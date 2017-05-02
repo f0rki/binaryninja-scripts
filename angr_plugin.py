@@ -146,8 +146,8 @@ def solve(bv):
 
 
 # Register commands for the user to interact with the plugin
-PluginCommand.register_for_address("Find Path to This Instruction",
+PluginCommand.register_for_address("angr - Find Path to This Instruction",
 	"When solving, find a path that gets to this instruction", find_instr)
-PluginCommand.register_for_address("Avoid This Instruction",
+PluginCommand.register_for_address("angr - Avoid This Instruction",
 	"When solving, avoid paths that reach this instruction", avoid_instr)
-PluginCommand.register("Solve With Angr", "Attempt to solve for a path that satisfies the constraints given", solve)
+PluginCommand.register("angr - Solve", "Attempt to solve for a path that satisfies the constraints given", solve)
