@@ -10,3 +10,6 @@
 [submodule "binaryninja-varslice"]
 	path = binaryninja-varslice
 	url = https://github.com/endeav0r/binaryninja-varslice.git
+[submodule "bn-goloader"]
+	path = bn-goloader
+	url = https://github.com/f0rki/bn-goloader.git
