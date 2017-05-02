@@ -1,0 +1,12 @@
+[submodule "binja-retdec"]
+	path = binja-retdec
+	url = https://github.com/hugsy/binja-retdec.git
+[submodule "xref_call_finder"]
+	path = xref_call_finder
+	url = https://github.com/rick2600/xref_call_finder.git
+[submodule "binoculars"]
+	path = binoculars
+	url = https://github.com/rick2600/binoculars.git
+[submodule "binaryninja-varslice"]
+	path = binaryninja-varslice
+	url = https://github.com/endeav0r/binaryninja-varslice.git
