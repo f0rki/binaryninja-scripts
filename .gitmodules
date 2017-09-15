@@ -13,3 +13,9 @@
 [submodule "bn-goloader"]
 	path = bn-goloader
 	url = https://github.com/f0rki/bn-goloader.git
+[submodule "syscaller"]
+	path = syscaller
+	url = https://github.com/carstein/Syscaller.git
+[submodule "annotate"]
+	path = annotate
+	url = https://github.com/carstein/Annotator.git
