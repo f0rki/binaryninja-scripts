@@ -19,3 +19,9 @@
 [submodule "annotate"]
 	path = annotate
 	url = https://github.com/carstein/Annotator.git
+[submodule "binja_arch_ref"]
+	path = binja_arch_ref
+	url = https://github.com/ehennenfent/binja_arch_ref.git
+[submodule "bnhook"]
+	path = bnhook
+	url = https://github.com/orndorffgrant/bnhook.git
