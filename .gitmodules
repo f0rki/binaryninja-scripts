@@ -25,3 +25,6 @@
 [submodule "bnhook"]
 	path = bnhook
 	url = https://github.com/orndorffgrant/bnhook.git
+[submodule "ethersplay"]
+	path = ethersplay
+	url = https://github.com/trailofbits/ethersplay.git
