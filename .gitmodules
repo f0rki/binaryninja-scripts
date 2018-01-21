@@ -28,3 +28,6 @@
 [submodule "ethersplay"]
 	path = ethersplay
 	url = https://github.com/trailofbits/ethersplay.git
+[submodule "binja_itanium_cxx_abi"]
+	path = binja_itanium_cxx_abi
+	url = https://github.com/whitequark/binja_itanium_cxx_abi
