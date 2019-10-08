@@ -47,11 +47,11 @@ def define_str_var(bv, addr):
     data = bv.read(a, MAX_STRING_LENGTH)
     if not data:
         log_alert("failed to read from 0x{:x}".format(a))
-    if "\x00" in data:
+    if b"\x00" in data:
         length = data.find("\x00") + 1
     else:
-        log_info("not a string: {!r}".format(data))
-        log_alert("doesn't look like a string")
+        log_info("not a null-terminated string: {!r}".format(data))
+        log_alert("doesn't look like a null-terminated-string")
         return
     varname = get_string_varname(data[:length])
     t = bv.parse_type_string("char {}[{}]".format(varname, length))
