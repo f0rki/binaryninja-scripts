@@ -34,6 +34,12 @@ def get_address_from_inst(bv, addr):
 
 
 def get_string_varname(s):
+    if isinstance(s, bytes):
+        try:
+            s = s.decode("utf-8")
+        except UnicodeDecodeError as e:
+            log_alert(str(e))
+            return "str_" + "XXX"
     varname = "str_"
     varname += _RE_REPLACE_UNDERSCORE.sub("_", s)
     varname = _RE_COMPRESS_UNDERSCORE.sub("_", varname)
@@ -48,7 +54,7 @@ def define_str_var(bv, addr):
     if not data:
         log_alert("failed to read from 0x{:x}".format(a))
     if b"\x00" in data:
-        length = data.find("\x00") + 1
+        length = data.find(b"\x00") + 1
     else:
         log_info("not a null-terminated string: {!r}".format(data))
         log_alert("doesn't look like a null-terminated-string")
